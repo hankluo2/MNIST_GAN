@@ -171,7 +171,7 @@ def generate_and_save_images(model, epoch, test_input):
     # 因此，所有层都在推理模式下运行（batchnorm）。
     predictions = model(test_input, training=False)
 
-    fig = plt.figure(figsize=(4, 4))
+    plt.figure(figsize=(4, 4))
 
     for i in range(predictions.shape[0]):
         plt.subplot(4, 4, i + 1)
